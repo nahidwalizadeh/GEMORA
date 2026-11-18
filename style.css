@@ -342,6 +342,12 @@ body{
     border-color  0.4s ease,
     box-shaadow 0.4s ease;
 }
+.pricing .gem-card:hover{
+    transform:translateY(-7px) scale(1.02);
+    border-color:#C6A15B;
+    box-shadow: 0 15px 35px rgba(198,161,91,0.18);
+    z-index: 2;
+}
 /* Pricing Jewelry Link */
 .pricing .gem-info a {
     display: inline-block;
