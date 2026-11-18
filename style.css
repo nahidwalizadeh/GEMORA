@@ -223,10 +223,12 @@ body{
     padding: 22px;
 }
 .gem-info h3{
-    color: #C6A15B;
+    color: #d6d6d6;
     font-family: 'Playfair Display', serif;
-    font-size: 21px;
-    margin-bottom: 12px;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
 }
 .gem-info p{
     color: #B7B2A7;
@@ -355,8 +357,10 @@ body{
  .pricing .price-label{
     color:#B7B2A7;
     font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
     margin-bottom: 8px;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
  }
  /* style price value */
  .pricing .price-value{
@@ -365,6 +369,7 @@ body{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 12px;
+    
  }
  .jewelry-btn{
     display: inline-block;
