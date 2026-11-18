@@ -333,9 +333,9 @@ body{
     margin-top: 45px;
 }
 .pricing .gem-card{
-    border-radius: 16px;
-    border: 1px solid rgba(198,61,91,0.35);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    border: 1px solid rgb(227, 186, 3);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
     overflow: hidden;
     position:relative;
     transition: transform 0.4s ease,
