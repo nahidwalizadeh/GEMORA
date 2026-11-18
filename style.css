@@ -351,6 +351,21 @@ body{
 .pricing .gem-card img{ transition: transform 0.5s ease; }
 .pricing .gem-card:hover img{  transform: scale(1.08); }
 .pricing .gem-info{  border-top: 1px solid rgba(198, 161, 91, 0.5); }
+ /* style  price label */
+ .pricing .price-label{
+    color:#B7B2A7;
+    font-size: 11px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+ }
+ /* style price value */
+ .pricing .price-value{
+    color:#C6A15B;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 12px;
+ }
 /* Pricing Jewelry Link */
 .pricing .gem-info a {
     display: inline-block;
