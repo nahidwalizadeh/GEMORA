@@ -314,11 +314,10 @@ body{
     width: 88%;
     height: auto;
     object-fit: contain;
-    border: 1px solid rgba(198, 161, 91, 0.3);
+    border: 2px solid rgba(198, 161, 91, 0.3);
     border-radius: 8px;
     transition: 0.4s ease;
     background-color: #101110;
-    /* aspect-ratio: 2/ 2; */
 }
 .emerald-images img:hover {
     border-color: #C6A15B;
