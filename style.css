@@ -403,8 +403,6 @@ body{
     font-size: 16px;
     color: #C4C1B8;
 }
-
-
 /* Contact Heading */
 .contact .collection-heading {
     max-width: 750px;
@@ -418,7 +416,6 @@ body{
     margin-bottom: 22px;
     letter-spacing: 1px;
 }
-
 .contact h2 span {
     color: #C6A15B;
     font-style: italic;
@@ -430,7 +427,6 @@ body{
     font-size: 17px;
     margin-top: 25px;
 }
-
 /* About Section */
 .about-section {
     width: 100%;
@@ -488,9 +484,7 @@ body{
     padding: 30px 35px;
     border-left: 2px solid rgba(198, 161, 91, 0.65);
     background: linear-gradient(
-        135deg,
-        rgba(198, 161, 91, 0.06),
-        rgba(16, 17, 16, 0.2) );  transition: 0.4s ease;
+        135deg,  rgba(198, 161, 91, 0.06),  rgba(16, 17, 16, 0.2) );  transition: 0.4s ease;
 }
 .about-story:hover,
 .about-mission:hover,
@@ -599,8 +593,53 @@ body{
     .emerald-images {grid-template-columns: 1fr; }
     .hero-content h1 { font-size: 30px;}
 }
-@media (max-width:600px){
-    .gem-grid{ 
-     grid-template-columns : 1fr; 
-  }
+@media (max-width:600px){ .gem-grid{  grid-template-columns : 1fr;  } }
+/* RESPONSIVE GALLERY FIX */
+@media (max-width: 768px) { .emerald-images img { width: 100%;  max-width: 100%;   height: auto;} }
+@media (max-width: 480px) { .emerald-images { grid-template-columns: repeat(2, minmax(0, 1fr));  gap: 12px; }  }
+/* RESPONSIVE ABOUT SECTION */
+@media (max-width: 768px) {
+    .about-section { padding: 75px 6%; }
+    .about-content > h2 { font-size: 38px;}
+    .about-content h3 {font-size: 24px;}
+    .about-content p { font-size: 13px;  line-height: 2;  text-align: left; }
+    .about-story,
+    .about-mission,
+    .about-vision {  margin-top: 35px; padding: 24px 22px; }
+ .about-ending {  font-size: 16px;  margin-top: 45px; } }
+
+/* RESPONSIVE CONTACT AND FOOTER */
+@media (max-width: 768px) {
+    .contact { padding: 80px 6%; }
+    .contact h2 { font-size: 40px;}
+    .contact p { font-size: 14px;  line-height: 1.9;}
+    .contact p:nth-of-type(2) {  font-size: 15px; }
+    .contact .hero-btn {  padding: 15px 32px;}
+    .footer { padding: 45px 6% 25px; }
+    .footer .logo { font-size: 32px; }
+    .footer p { font-size: 13px; line-height: 1.8; } }
+/* SMALL MOBILE PHONES */
+@media (max-width: 480px) {
+    .contact h2 { font-size: 34px; }
+    .contact p {   font-size: 13px; }
+    .contact .hero-btn {  padding: 14px 28px; font-size: 11px; }
+    .footer .logo {  font-size: 28px; }
+    .footer .copyright {  font-size: 11px; } }
+
+/* RESPONSIVE HEADER AND NAVBAR */
+@media (max-width: 768px) {
+    .header { display: grid;  grid-template-columns: 1fr auto;  padding: 12px 5%; gap: 12px;  }
+    .header .logo {  justify-self: start; }
+    .header .header-btn { justify-self: end; }
+    .navbar { grid-column: 1 / -1;
+        order: initial;  width: 100%;  display: flex; justify-content: space-between;  align-items: center;  flex-wrap: nowrap;  gap: 8px; }
+    .navbar a {  font-size: 11px;  white-space: nowrap;  }
+}
+/* VERY SMALL SCREENS */
+@media (max-width: 360px) {
+    .header { padding: 10px 4%;  gap: 10px;  }
+    .header .logo {  font-size: 22px; }
+    .header .header-btn {  padding: 7px 8px;   font-size: 8px;}
+    .navbar { gap: 5px; }
+    .navbar a {  font-size: 9px;   }
 }
