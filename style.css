@@ -620,10 +620,13 @@ body{
     .footer .copyright {  font-size: 11px; } }
 
 /* RESPONSIVE HEADER AND NAVBAR */
+@media (max-width:1000px){
+    .header .header-btn{justify-self: end; white-space: nowrap; }
+}
 @media (max-width: 768px) {
     .header { display: grid;  grid-template-columns: 1fr auto;  padding: 12px 5%; gap: 12px;  }
     .header .logo {  justify-self: start; }
-    .header .header-btn { justify-self: end; }
+    .header .header-btn { justify-self: end; white-space: nowrap;  }
     .navbar { grid-column: 1 / -1;
         order: initial;  width: 100%;  display: flex; justify-content: space-between;  align-items: center;  flex-wrap: nowrap;  gap: 8px; }
     .navbar a {  font-size: 11px;  white-space: nowrap;  }
@@ -641,6 +644,16 @@ body{
     #pricing,
     #about,
     #contact{
+        scroll-margin-top: 130px;
+    }
+}
+/* LANDSCAPE MODE - FIX SECTION HEADINGS */
+@media (max-width: 1000px) and (orientation: landscape) {
+    #collection,
+    #pricing,
+    #about,
+    #contact,
+    .gem-details {
         scroll-margin-top: 130px;
     }
 }
