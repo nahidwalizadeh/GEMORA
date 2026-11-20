@@ -135,7 +135,6 @@ body{
     line-height: 2;
     max-width: 480px;
     margin-bottom: 35px;
-
 }
 .hero-btn{
     display: inline-block;
@@ -335,7 +334,7 @@ body{
 }
 .pricing .gem-card{
     border-radius: 20px;
-    border: 1px solid rgb(160, 131, 0.35);
+    border: 1px solid rgba(198, 161, 91, 0.35);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
     overflow: hidden;
     position:relative;
@@ -368,7 +367,6 @@ body{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 12px;
-    
  }
  .jewelry-btn{
     display: inline-block;
@@ -535,15 +533,12 @@ body{
     .gem-details { padding: 80px 6%; }
     .gem-details h2 {  font-size: 46px;}
     .gem-details h3 { font-size: 26px; }
-    .emerald-images { grid-template-columns: repeat(2, minmax(0, 1fr));  }
+    .emerald-images { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 /* MOBILE AND TABLETS */
 @media (max-width: 768px) {
     /* HEADER AND NAVBAR */
-    .header { padding: 14px 5%; flex-wrap: wrap; justify-content: center; gap: 12px; }
     .logo { font-size: 30px;}
-    .navbar {order: 3; width: 100%; justify-content: center; flex-wrap: wrap; gap: 18px; }
-    .navbar a {font-size: 12px;}
     .header-btn {padding: 9px 13px; font-size: 10px; }
     /* HERO */
     .hero {min-height: 90vh; padding: 180px 6% 70px; }
@@ -567,6 +562,7 @@ body{
     .gem-details li {font-size: 12px; }
     /* ALL GEMSTONE GALLERIES */
     .emerald-images { grid-template-columns: repeat(2, minmax(0, 1fr));  gap: 15px;}
+    .emerald-images img { width: 100%;  max-width: 100%;  height: auto; }
 }
 /* SMALL MOBILE PHONES */
 @media (max-width: 480px) {
@@ -594,9 +590,6 @@ body{
     .hero-content h1 { font-size: 30px;}
 }
 @media (max-width:600px){ .gem-grid{  grid-template-columns : 1fr;  } }
-/* RESPONSIVE GALLERY FIX */
-@media (max-width: 768px) { .emerald-images img { width: 100%;  max-width: 100%;   height: auto;} }
-@media (max-width: 480px) { .emerald-images { grid-template-columns: repeat(2, minmax(0, 1fr));  gap: 12px; }  }
 /* RESPONSIVE ABOUT SECTION */
 @media (max-width: 768px) {
     .about-section { padding: 75px 6%; }
@@ -642,4 +635,12 @@ body{
     .header .header-btn {  padding: 7px 8px;   font-size: 8px;}
     .navbar { gap: 5px; }
     .navbar a {  font-size: 9px;   }
+}
+@media (max-width: 768px) {
+    #collection,
+    #pricing,
+    #about,
+    #contact{
+        scroll-margin-top: 130px;
+    }
 }
